@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Térmica La Florida - Tucumán</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="project-container">
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+        <!-- Título del Proyecto -->
+        <section id="titulo-proyecto">
+            <h1>Central Térmica La Florida - Tucumán</h1>
+            <p>Metodología PMI/Waterfall - Proyectos de inversión de capital</p>
+        </section>
+
+        <!-- Alcance del Proyecto -->
+        <section id="alcance">
+            <h2>1. Descripción General del Proyecto</h2>
+            <p>Este proyecto contempló la construcción de una planta de generación de energía eléctrica en 
+                una instalación agroindustrial, utilizando bagazo de caña como combustible. El alcance del 
+                proyecto incluye la instalación de una caldera para la producción de vapor 
+                saturado a 24 bar, el cual es transportado hacia la Casa de Fuerza II, un edificio especialmente 
+                diseñado para albergar tres turbogeneradores de gran capacidad: dos turbogeneradores de 12,24 MW 
+                de la marca TGM y uno de 12 MW de la marca NG. La energía generada se dirije estratégicamente 
+                una parte al ingenio, para su autoabastecimiento con aproximadamente 8 MW, y la otra parte a la red del Sistema Eléctrico 
+                Nacional (SADI), con un aporte aproximado de 6 MW.</p>
+
+
+            <p>Este modelo de cogeneración no solo permite que el ingenio opere de manera autosuficiente, sino 
+                que también aporta energía al sistema nacional durante los períodos de alta demanda. El vapor de 
+                escape de los generadores se utiliza eficientemente para alimentar otros procesos dentro de la planta, 
+                y los condensados son reciclados para optimizar el ciclo de producción energética, lo cual permite un 
+                uso eficiente y sostenible de los recursos.</p>
+        </section>
+
+        <!-- Video del Proyecto -->
+        <section id="video">
+            <h2>Medidor SMEC del sistema de generación</h2>
+            <video controls autoplay muted>
+                <source src="{{ url_for('static', filename='images/proyecto1/1.mp4') }}" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </section>
+
+        <!-- Relato del Proyecto -->
+        <section id="relato1">
+            <h2>2. Impacto Económico y Sostenibilidad</h2>
+            <p>El proyecto representa una gran oportunidad económica para la región y está alineado con 
+                los objetivos de sostenibilidad de la industria azucarera. Al aprovechar el bagazo como 
+                fuente de energía, la planta no solo reduce su dependencia de combustibles fósiles, sino 
+                que también disminuye las emisiones de gases de efecto invernadero al reutilizar un residuo 
+                agroindustrial. La planta de cogeneración fortalece la cadena productiva de azúcar y alcohol,
+                 permitiendo un ciclo de producción continua que maximiza el uso de los recursos locales.
+
+                La disponibilidad de energía eléctrica generada a partir del bagazo mejora la logística y 
+                la viabilidad operativa de la industria, facilitando la producción de bioetanol, en 
+                cumplimiento con la ley 27.640. Además, el proyecto 
+                respalda la expansión de actividades agropecuarias complementarias en la región, 
+                incentivando un modelo de desarrollo económico sostenible. Gracias a la instalación 
+                de nuevas calderas y generadores, el proyecto mejora significativamente la eficiencia 
+                energética de la planta, alcanzando un rendimiento en la generación de vapor de entre el 
+                80 y el 85%, en comparación con el 50-60% de las tecnologías anteriores.</p>
+        </section>
+
+        <section id="relato2">
+            <h2>3. Habilitación Técnica y Comercial del Proyecto</h2>
+            <p>La habilitación técnica y comercial fue un componente crucial para el éxito del proyecto, 
+                y se llevó a cabo con la gestión ante diversas entidades reguladoras como ENRE, TRANSNOA, 
+                y CAMMESA. Entre los trámites más relevantes se incluye la Autorización de Ingreso como Agente 
+                del Mercado Eléctrico Mayorista (MEM) otorgada por la Secretaría de Energía, la Autorización de 
+                Acceso a la Capacidad de Transporte por el ENRE, y la presentación de los Estudios Eléctricos 
+                de Etapa II al PAFTT y CAMMESA.
+
+                Asimismo, el proyecto obtuvo la aprobación del Proyecto SMEC, que asegura el cumplimiento 
+                de los estándares técnicos necesarios para su integración al sistema interconectado. Esta 
+                fase de habilitación no solo implicó la documentación técnica, sino también un cumplimiento 
+                exhaustivo de las normativas de seguridad y operatividad, lo cual fue certificado en varias 
+                ocasiones por el Instituto Nacional de Tecnología Industrial (INTI). La rigurosidad de esta 
+                gestión garantiza que la planta de cogeneración cumpla con todos los requerimientos para su 
+                operación en el mercado eléctrico Argentino, tanto en términos de seguridad como de eficiencia 
+                energética.</p>
+        </section>
+
+        <!-- Fotos del Proyecto-->
+        <section id="fotos">
+            <h2>4. Galería del Proyecto</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/proyecto1/1.webp') }}" alt="Foto 1">
+                <img src="{{ url_for('static', filename='images/proyecto1/2.webp') }}" alt="Foto 2">
+                <img src="{{ url_for('static', filename='images/proyecto1/3.webp') }}" alt="Foto 3">
+                <img src="{{ url_for('static', filename='images/proyecto1/4.webp') }}" alt="Foto 4">
+            </div>
+        </section>
+
+        <!-- Referencia de Textos (Cronograma, Presupuesto, etc.) -->
+        <section id="referencias">
+            <h2>5. Aplicación de Buenas Prácticas PMI</h2>
+            <p>En la ejecución de este proyecto se aplicó rigurosamente las buenas prácticas de PMI (Project Management Institute(R)) en todas 
+                las fases, desde la planificación hasta la ejecución y cierre. La planificación se realizó 
+                con un enfoque de gestión de proyectos estandarizado, dividiendo el trabajo en hitos 
+                específicos y asegurando que los entregables cumplieran con los estándares de calidad y 
+                seguridad. Se implementó una Gestión de Riesgos activa, identificando posibles obstáculos 
+                y desarrollando estrategias de mitigación para cada uno de ellos, lo cual fue clave para 
+                mantener el proyecto dentro de los plazos y el presupuesto establecidos.</p>
+
+            <p>Durante la fase de ejecución, la gestión de la comunicación fue esencial para coordinar 
+                las actividades entre los equipos involucrados, manteniendo informados a los stakeholders 
+                clave, como la gerencia y los organismos reguladores. La metodología Agile fue utilizada 
+                en paralelo para realizar revisiones y ajustes continuos, asegurando una ejecución flexible 
+                y adaptable. Además, se implementó un control de calidad exhaustivo en todas las etapas del 
+                proyecto, verificando que cada componente cumpliera con las especificaciones técnicas antes 
+                de su integración en el sistema general.</p>
+        </section>
+
+        <!-- Botón de Retorno -->
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

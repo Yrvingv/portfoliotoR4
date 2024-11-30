@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Arquitectura</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="project-container">
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+        <!-- Título del Proyecto -->
+        <section id="titulo-proyecto">
+            <h1>Diseño de Arquitectura de una Vivienda Unifamiliar</h1>
+            <p>Gerencia de proyectos de ingeniería</p>
+        </section>
+
+        <!-- Alcance del Proyecto -->
+        <section id="alcance">
+            <h2>1. Alcance del proyecto.</h2>
+            <p>Este proyecto abarca el desarrollo completo de los planos arquitectónicos de una casa 
+                unifamiliar de dos plantas, estableciendo la base para la ingeniería básica y el proyecto ejecutivo. 
+                Se buscó lograr un diseño compacto y eficiente que optimizara los espacios y facilitara 
+                la construcción. El equipo, compuesto por la arquitecta y el proyectista, trabajó en 
+                colaboración para desarrollar planos y modelos 3D de la casa, permitiendo visualizar 
+                y evaluar la funcionalidad de cada espacio. Para gestionar el proyecto, se elaboró una
+                Estructura de Desglose del Trabajo (WBS, por sus siglas en inglés), que desglosó todas
+                las fases y tareas, brindando una visión clara de cada etapa. Se creó también un 
+                diccionario de WBS, donde se detallaron cada componente y sus especificaciones, 
+                facilitando la planificación y el seguimiento de actividades clave en el diseño y 
+                desarrollo de planos y 3D, lo que permitió una ejecución ordenada y coherente del 
+                proyecto.</p>
+        </section>
+
+        <!-- Video del Proyecto -->
+        <section id="video">
+            <h2>Muestra del Proyecto</h2>
+            <video controls autoplay muted>
+                <source src="{{ url_for('static', filename='images/proyecto3/1.mp4') }}" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </section>
+
+        <!-- Relato del Proyecto -->
+        <section id="relato1">
+            <h2>2. Fases de desarrollo con metodología ágil (Scrum).</h2>
+            <p>La definición de espacios en la vivienda se abordó con metodología ágil, específicamente 
+                con Scrum, para garantizar un proceso iterativo y ajustable. En cada sprint, el equipo 
+                definió, revisó y ajustó las características de los espacios, garantizando que cada área 
+                cumpliera tanto con criterios de funcionalidad como de estética. El uso de Scrum permitió 
+                a la arquitecta y al proyectista ajustar y mejorar el diseño de cada espacio con 
+                retroalimentación frecuente, respondiendo a desafíos del diseño compacto. En cada sprint 
+                se definían tareas específicas, como ajustes de disposición, optimización de circulaciones 
+                y accesibilidad de áreas, para lograr una casa agradable y de fácil construcción, 
+                manteniendo siempre la visión compacta y eficiente en todo el desarrollo.</p>
+        </section>
+
+        <!-- Fotos del Proyecto-->
+        <section id="fotos">
+            <h2>3. Galería del Proyecto.</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/proyecto3/1.webp') }}" alt="Foto 1">
+                <img src="{{ url_for('static', filename='images/proyecto3/2.webp') }}" alt="Foto 2">
+                <img src="{{ url_for('static', filename='images/proyecto3/4.webp') }}" alt="Foto 4">
+            </div>
+        </section>
+
+        <!-- Referencia de Textos (Cronograma, Presupuesto, etc.) -->
+        <section id="referencias">
+            <h2>4. Herramientas y técnicas del PMI para la gestión ágil del proyecto.</h2>
+            <p>Para asegurar la agilidad y organización en el proyecto, se usaron varias herramientas 
+                y técnicas del PMI. La gestión del cronograma permitió definir hitos y plazos claros 
+                para cada sprint, coordinando la ejecución de los planos arquitectónicos y modelos 3D. 
+                El control de calidad se aplicó en cada fase, revisando la precisión de planos y modelos 
+                3D y permitiendo ajustes continuos para alcanzar un diseño optimizado. Además, se elaboró
+                la matriz RACI para establecer roles y responsabilidades, definiendo las funciones de la 
+                arquitecta y el proyectista. Esta matriz clarificó el proceso de toma de decisiones, 
+                asegurando que cada tarea tuviera un responsable claro y que el flujo de comunicación 
+                fuera efectivo. La implementación de un tablero Kanban permitió visualizar el progreso de 
+                tareas en tiempo real, facilitando el seguimiento de cada fase y asegurando la alineación 
+                del equipo en cada etapa.</p>
+        </section>
+
+        <!-- Botón de Retorno -->
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

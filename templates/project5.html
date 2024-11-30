@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPCA: planta de concentración de vinazas</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="project-container">
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+        <!-- Título del Proyecto -->
+        <section id="titulo-proyecto">
+            <h1>EPCA: planta de concentración de vinazas</h1>
+            <p>Gerencia de proyectos de construcción</p>
+        </section>
+
+        <!-- Alcance del Proyecto -->
+        <section id="alcance">
+            <h2>1. Alcance del proyecto.</h2>
+            <p>El proyecto, titulado "Ingeniería, Procura, Construcción y Puesta en Marcha de una Planta de 
+                Concentración de Vinaza", abordó el tratamiento de vinazas, que son efluentes líquidos 
+                provenientes de la primera torre de destilación de la planta de producción de etanol. Esta 
+                planta fue conceptualizada por la empresa Constructora DiBacco, que lideró el desarrollo de 
+                la ingeniería, mientras que la Constructora DiBacco se encargó de la procura de materiales, 
+                fabricación de equipos y construcción. Finalmente, el Ingenio La Florida supervisó la IPC y 
+                la puesta en marcha.
+
+                El objetivo de este proyecto fue concentrar 350 toneladas por hora de vinaza, permitiendo 
+                la reducción de su volumen y facilitando su manejo posterior para usos industriales o 
+                agrícolas. La vinaza concentrada fue destinada a ser utilizada como fertilizante orgánico 
+                de suelos. Para gestionar la complejidad del proyecto, se elaboró una Estructura de Desglose 
+                del Trabajo (WBS) y su diccionario, detallando cada componente, tarea y subproceso.
+                
+                Además, se estableció una matriz de interesados clave, que incluía a los departamentos de 
+                generación de vapor, oficina técnica, instrumentación y control, automatismos y sistemas 
+                de la planta. Se desarrollaron cronogramas de ejecución detallados, segmentados por las 
+                fases de ingeniería, procura, construcción y puesta en marcha. También se implementaron 
+                procesos para el levantamiento de No Conformidades de Obra (NC), asegurando el seguimiento 
+                de la calidad en la construcción de la instalación, junto con informes de progreso periódicos 
+                que permitieron la revisión constante del avance y la identificación temprana de cualquier 
+                desviación.</p>
+        </section>
+
+        <!-- Video del Proyecto -->
+        <section id="video">
+            <h2>Montaje Mecánico de la Estructura Principal de la Planta</h2>
+            <img src="{{ url_for('static', filename='images/proyecto5/0.webp') }}" alt="Imagen del Proyecto 4" style="max-width: 45%; height: auto;">
+        </section>
+
+        <!-- Relato del Proyecto -->
+        <section id="relato1">
+            <h2>2. Fases del desarrollo utilizando Waterfall y Lean Construction.</h2>
+            <p>La ejecución del proyecto siguió una combinación de metodología Waterfall y Lean 
+                Construction. La metodología Waterfall permitió una planificación 
+                secuencial clara, asegurando que cada etapa (ingeniería, procura, construcción y 
+                puesta en marcha) se completara antes de avanzar a la siguiente. Lean Construction 
+                se aplicó durante la construcción para maximizar la eficiencia y minimizar desperdicios, 
+                enfocándose en la mejora continua de los procesos y la optimización de los recursos. 
+                Cada fase incluyó revisiones de calidad, coordinación de equipos y sesiones de 
+                retroalimentación para garantizar que los requisitos técnicos y de calidad se 
+                cumplieran antes de avanzar. Esta combinación de metodologías permitió un flujo 
+                de trabajo estructurado y eficiente, logrando optimizar los tiempos y costos de 
+                cada etapa, lo que fue crucial para cumplir con el objetivo de tratar un gran volumen 
+                de agua por hora y reintroducirla en el proceso de producción de manera efectiva.</p>
+        </section>
+
+        <!-- Fotos del Proyecto-->
+        <section id="fotos">
+            <h2>3. Galería del Proyecto.</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/proyecto5/0.webp') }}" alt="Foto 1">
+                <img src="{{ url_for('static', filename='images/proyecto5/2.webp') }}" alt="Foto 2">
+                <img src="{{ url_for('static', filename='images/proyecto5/3.webp') }}" alt="Foto 3">
+                <img src="{{ url_for('static', filename='images/proyecto5/4.webp') }}" alt="Foto 4">
+            </div>
+        </section>
+
+        <!-- Referencia de Textos (Cronograma, Presupuesto, etc.) -->
+        <section id="referencias">
+            <h2>4. Importancia del control de construcción con curvas S.</h2>
+            <p>El control del progreso en la construcción de la planta de concentración fue gestionado 
+                mediante el uso de curvas S, una herramienta que permitió monitorear las desviaciones 
+                en tiempo real respecto al cronograma establecido al inicio del proyecto. Las curvas S, 
+                generadas a partir de los cronogramas, ofrecieron una visión gráfica del progreso 
+                acumulado frente al tiempo y los costos estimados. En este contexto, el análisis 
+                de curvas S facilitó la comparación entre el avance planeado y el real, permitiendo 
+                detectar cualquier desviación para tomar acciones correctivas a tiempo. Herramientas 
+                como el Valor Ganado (Earned Value) permitieron realizar un análisis más profundo de 
+                la eficiencia del proyecto, ayudando a evaluar si las actividades se estaban completando 
+                en tiempo y presupuesto. Con esta técnica, el equipo de proyecto pudo tener un control 
+                riguroso sobre el avance, minimizando el riesgo de retrasos y garantizando que el proyecto 
+                se mantuviera alineado con los objetivos iniciales de producción de agua limpia y 
+                reutilización de cenizas. Este enfoque de control se complementó con los informes de 
+                rendimiento y reuniones de revisión, que facilitaron la comunicación y transparencia 
+                entre los diferentes departamentos e interesados clave.</p>
+        </section>
+
+        <!-- Referencia de Textos (Cronograma, Presupuesto, etc.) -->
+        <section id="referencias">
+            <h2>5. Herramientas y técnicas del PMI para la gestión ágil en el proyecto</h2>
+            <p>Aunque el proyecto utilizó una metodología estructurada, se incorporaron elementos 
+                de agilidad para abordar aspectos de cambio y ajuste. Reuniones de retroalimentación 
+                periódica, programadas al final de cada etapa, permitieron evaluar el desempeño y 
+                ajustar estrategias según las necesidades emergentes del proyecto. Para la gestión 
+                de interesados y la comunicación continua, se emplearon reuniones diarias breves, 
+                enfocadas en coordinar la ejecución de tareas diarias y anticipar problemas potenciales. 
+                También se utilizó un tablero Kanban para organizar y visualizar las tareas pendientes, 
+                en proceso y completadas, permitiendo una rápida identificación de cuellos de botella y 
+                facilitando una toma de decisiones ágil. Adicionalmente, el análisis de riesgos continuo
+                permitió al equipo adaptarse y responder a cambios en los recursos o los plazos, 
+                utilizando planes de contingencia cuando fuera necesario. La integración de estos 
+                principios ágiles mejoró la capacidad del equipo para gestionar la complejidad del 
+                proyecto, logrando una mayor flexibilidad y eficiencia en cada etapa.</p>
+        </section>
+
+
+
+        <!-- Botón de Retorno -->
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

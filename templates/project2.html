@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación WEB Asistido con IA</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="project-container">
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+        <!-- Título del Proyecto -->
+        <section id="titulo-proyecto">
+            <h1>Programación Web de un Portafolio Personal de Proyectos</h1>
+            <p>Aplicación de IA para el diseño web</p>
+        </section>
+
+        <!-- Alcance del Proyecto -->
+        <section id="alcance">
+            <h2>1. Alcance del proyecto.</h2>
+            <p>Este proyecto tuvo como objetivo desarrollar un portafolio web para un gerente de proyectos, 
+                permitiéndole presentar sus logros y habilidades. Se adaptó una plantilla descargada de telegram, 
+                personalizando los archivos HTML, CSS y JavaScript para reflejar su información profesional y personal. 
+                También se creó una hoja de rutas en Python para manejar la navegación entre proyectos, 
+                y se diseñó una página individual para cada proyecto, logrando una interfaz organizada 
+                y atractiva.
+                Se colocó una nueva ventana (esto fue lo mas difícil) para que el cliente colocara los servicios de su emprendimiento de empresa 
+                de ingeniería, además de otros servicios que presta.</p>
+        </section>
+
+        <!-- Video del Proyecto -->
+        <section id="video">
+            <h2>Muestra del Proyecto</h2>
+            <video controls autoplay muted>
+                <source src="{{ url_for('static', filename='images/proyecto2/1.mp4') }}" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </section>
+
+        <!-- Relato del Proyecto -->
+        <section id="relato1">
+            <h2>2. Fases del desarrollo web asistido por IA.</h2>
+            <p>El desarrollo de programación asistido por IA incluyó varias fases: recolección de requerimientos, 
+                personalización, desarrollo, y pruebas. En la fase de personalización, se utilizó chatPGT 4o (modelo canvas) y GitHub 
+                Copilot, estos fueron clave para adaptar el diseño y los datos. En el desarrollo, se implementaron 
+                rutas en Python para la navegación, y en las pruebas, se ajustaron los elementos visuales 
+                y de funcionamiento en distintos dispositivos, todo de manera eficiente gracias a la IA.</p>
+        </section>
+
+        <section id="relato2">
+            <h2>3. Ventajas del diseño web asistido por IA.</h2>
+            <p>La IA permitió reducir tiempos y mejorar la calidad, asistiendo en la escritura y corrección 
+                de código. Herramientas como GitHub Copilot facilitaron la personalización del diseño y 
+                optimizaron la resolución de errores en tiempo real, ofreciendo recomendaciones y mejorando 
+                la calidad visual y funcional del portafolio.</p>
+        </section>
+
+        <!-- Fotos del Proyecto-->
+        <section id="fotos">
+            <h2>4. Galería del Proyecto</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/proyecto2/1.webp') }}" alt="Foto 1">
+                <img src="{{ url_for('static', filename='images/proyecto2/2.webp') }}" alt="Foto 2">
+                <img src="{{ url_for('static', filename='images/proyecto2/3.webp') }}" alt="Foto 3">
+                <img src="{{ url_for('static', filename='images/proyecto2/4.webp') }}" alt="Foto 4">
+            </div>
+        </section>
+
+        <!-- Referencia de Textos (Cronograma, Presupuesto, etc.) -->
+        <section id="referencias">
+            <h2>4. Herramientas y técnicas del PMI para la gestión ágil del proyecto</h2>
+            <p>Se aplicaron técnicas ágiles del PMI como sprints, reuniones diarias y backlog, 
+                permitiendo una organización flexible y eficiente. Los sprints semanales se centraron 
+                en cada etapa clave (diseño, desarrollo y pruebas), mientras que las reuniones ayudaron 
+                a resolver problemas y ajustar prioridades. El uso de un tablero Kanban hizo visible 
+                el progreso del trabajo, logrando un flujo ordenado y adaptable a los cambios.</p>
+        </section>
+
+        <!-- Botón de Retorno -->
+        <section id="retorno">
+            <a href="{{ url_for('home') }}" class="btn">Regresar al Portafolio</a>
+        </section>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

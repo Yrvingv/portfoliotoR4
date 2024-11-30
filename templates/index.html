@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio - YV</title>
+  <title>yrvingv-PortfolioPersonal</title>
 
   <!--
     - favicon
@@ -52,7 +52,7 @@
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span>Mostrar contactos</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -86,9 +86,8 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+541128390182" class="contact-link">+54 (11) 2839-0182</a>
+              <p class="contact-title">WhatsApp</p>
+              <a href="https://wa.me/541128390182" class="contact-link">+54 (11) 2839-0182</a>
             </div>
 
           </li>
@@ -114,9 +113,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title">Ubicación</p>
 
-              <address>Buenos Aires, Argentina</address>
+              <address>Tucumán, Argentina</address>
             </div>
 
           </li>
@@ -170,7 +169,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link {% if active_page == 'about' %}active{% endif %}" data-nav-link>Sobre mí</button>
           </li>
 
           <li class="navbar-item">
@@ -178,11 +177,15 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Mis Servicios</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link {% if active_page == 'blog' %}active{% endif %}" data-nav-link>Blog</button>
           </li>
 
           <li class="navbar-item">
@@ -201,26 +204,27 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about {% if active_page != 'blog' %}active{% endif %}" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Conóceme</h2>
         </header>
 
         <section class="about-text">
-          <p>
-            Profesional de gestión de proyectos, con más de 17 años de experiencia en la industria de la generación de 
-            energía. Comprobada trayectoria en la gestión integral del desarrollo de proyectos de ingeniería y construcción
-            a gran escala. Cuento con experiencia en la aplicación de metodologías de gestión de proyectos como PMI y 
-            Agilidad (Scrum), y poseo habilidades analíticas sólidas para evaluar el progreso de proyectos, identificar 
-            riesgos y facilitar la toma de decisiones proactivas. He administrado contratos de obra con empresas multinacionales, 
-            especialmente para acuerdos EPC. 
+          <p>Project Manager con más de 17 años de experiencia en la gestión de proyectos industriales 
+            y energéticos. Especializado en EPC, PMI, Lean Construction y Agile, liderando proyectos 
+            desde la conceptualización hasta la entrega, con enfoque en optimización de recursos, 
+            control de cronogramas y mitigación de riesgos. Experto en MS Project y técnicas 
+            de gestión de riesgos, con un historial comprobado de cumplir plazos y presupuestos. 
+            Busco oportunidades para aportar mi experiencia en entornos multidisciplinarios 
+            y multiculturales, alineados con los estándares de calidad y seguridad de la industria. 
           </p>
 
           <p>
-            Hablo inglés a nivel intermedio-avanzado y soy reconocido por liderar equipos, garantizando un ambiente de trabajo 
-            colaborativo y alineado con los objetivos del proyecto. Excelentes habilidades de comunicación e interpersonales 
-            para fomentar la colaboración con equipos remotos e interesados clave.
+            Hablo inglés a nivel intermedio-avanzado y soy reconocido por liderar equipos, garantizando 
+            un ambiente de trabajo colaborativo y alineado con los objetivos del proyecto. Excelentes 
+            habilidades de comunicación e interpersonales para fomentar la colaboración con equipos 
+            remotos e interesados clave.
           </p>
         </section>
 
@@ -243,10 +247,12 @@
               </div>
 
               <div class="service-content-box">
+                
                 <h4 class="h4 service-item-title">Gerencia de Proyectos</h4>
 
                 <p class="service-item-text">
-                  Ahora controlo proyectos para empresas de producción de energía. El sector de las energías renovables me apaciona.
+                  Dirijo proyectos para empresas de producción industrial.
+                  Sectores de ingeniería, construcción e investigación y desarrollo.
                 </p>
               </div>
 
@@ -261,7 +267,8 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web developer</h4>
                 <p class="service-item-text">
-                  Me gusta programar en Python. Deseo lograr un nivel profesional de programación para dedicarme a eso en un futuro cercano.
+                  Me gusta la programación asistida por IA (Python, html, js, css). 
+                  Automatizo soluciones para directores de proyecto.
                 </p>
               </div>
 
@@ -274,10 +281,11 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AGEEL</h4>
+                <h4 class="h4 service-item-title">Servicios</h4>
 
                 <p class="service-item-text">
-                  Emprendimiento de producción de ingeniería y proyectos para la industrialización de soluciones de producción.
+                  AGEEL Projects - Emprendimiento de consultoría de proyectos, especialmente en ambientes remotos 
+                  para la industrialización de soluciones (Véase ventana MIS SERVICIOS).
                 </p>
               </div>
 
@@ -290,10 +298,11 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Be Better Man</h4>
+                <h4 class="h4 service-item-title">Mi familia</h4>
 
                 <p class="service-item-text">
-                  Emprendimiento para la mejorar la vida de los demas a través de coaching de productividad.
+                  Padre de cuatro hermosas chicas y esposo de mi hermosa Soli.
+                  Felices y siempre juntos con MIA🐶.
                 </p>
               </div>
 
@@ -349,7 +358,7 @@
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Yrving es un Lider con una elevada capacidad intelectual y emocional para dirigir personal 
+                    Yrving es un Líder con una elevada capacidad intelectual y emocional para dirigir personal 
                     de tal forma que genera excelentes resultados para la organización donde labore.
                   </p>
                 </div>
@@ -433,7 +442,7 @@
                 <p>
                   Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                   lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  and is very concerned the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
                   consectetur adipiscing
                   elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
@@ -458,7 +467,7 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-1-color.png" alt="client logo">
+                <img src="./static/images/logo-1-color.svg" alt="client logo">
               </a>
             </li>
 
@@ -470,13 +479,13 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-3-color.png" alt="client logo">
+                <img src="./static/images/logo-3-color.webp" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-4-color.png" alt="client logo">
+                <img src="./static/images/logo-4-color.webp" alt="client logo">
               </a>
             </li>
 
@@ -488,10 +497,16 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-6-color.png" alt="client logo">
+                <img src="./static/images/logo-6-color.svg" alt="client logo">
               </a>
             </li>
 
+            <li class="clients-item">
+              <a href="#">
+                <img src="./static/images/logo-7-color.png" alt="client logo">
+              </a>
+            </li>
+          
           </ul>
 
         </section>
@@ -582,7 +597,7 @@
               <span>2022 — Presente</span>
 
               <p class="timeline-text">
-                EPC - Generación de 20MW de energía electrica. Combustible Biomasa.  
+                EPC - Generación de 20MW de energía eléctrica. Combustible Biomasa.  
               </p>
 
             </li>
@@ -606,7 +621,8 @@
               <span>2016 — 2021</span>
 
               <p class="timeline-text">
-                Coordinar la ingenieria y construcción de instalaciones industriales en áreas operacionales. 
+                Coordinar la ingenieria y construcción de instalaciones industriales en áreas 
+                operacionales. 
               </p>
 
             </li>
@@ -637,11 +653,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Web design</h5>
-                <data value="20">20%</data>
+                <data value="30">30%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
+                <div class="skill-progress-fill" style="width: 30%;"></div>
               </div>
 
             </li>
@@ -692,6 +708,181 @@
       </article>
 
 
+      <!--
+        - #MIS SERVICIOS
+      -->
+
+
+      <article class="about services-section" data-page="services">
+
+        <header>
+          <h2 class="h2 article-title">Servicios</h2>
+        </header>
+      
+        <header>
+          <h2 class="h3 article-title">Ageel Projects: innovación y precisión en Ingeniería y Construcción</h2>
+        </header>
+
+
+
+        <!-- Información introductoria -->
+        <section class="about-text">
+          <p>En Ageel Projects, nos dedicamos a la consultoría de ingeniería y construcción, brindando 
+            un enfoque integral que abarca todas las disciplinas necesarias para llevar adelante proyectos 
+            exitosos. Nuestro compromiso es coordinar de manera eficiente aspectos clave como alcance, 
+            presupuestos, cronogramas y calidad, asegurando que cada etapa, desde la conceptualización 
+            hasta la construcción, se ejecute con precisión y altos estándares.</p>
+          <p>Trabajamos con la metodología Front-End Loading (FEL), una herramienta reconocida por 
+            estructurar los proyectos en fases claras que maximizan su viabilidad técnica y económica. 
+            Este enfoque escalonado se centra en dos decisiones clave: D1, que marca el paso del concepto 
+            a la definición, y D2, que autoriza avanzar de la definición a la ejecución en obra. Con estas 
+            etapas bien definidas, garantizamos un proceso organizado y orientado al éxito.</p>
+        </section>
+      
+        <!-- Servicios -->
+        <section class="service">
+          <h3 class="h3 service-title">¿Qué ofrecemos como empresa consultoría de proyectos?</h3>
+      
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./static/images/serv1.webp" alt="Design icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo Multidisciplinario de Ingeniería</h4>
+                <p class="service-item-text">
+                  En Ageel Projects, entendemos que cada proyecto es único y requiere una visión técnica 
+                  integral desde sus primeras etapas. Por ello, ofrecemos un servicio especializado en el 
+                  desarrollo multidisciplinario de ingeniería, abarcando las fases de conceptualización, 
+                  definición y detalle, asegurando soluciones personalizadas. Nuestro enfoque asegura que 
+                  los proyectos no solo cumplan con los objetivos técnicos, sino que también sean económicamente 
+                  viables, sostenibles en el tiempo y alineados con los objetivos del cliente (veáse blog Articulo 2).
+                </p>
+              </div>
+            </li>
+      
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./static/images/serv2.webp" alt="Web development icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Control y monitoreo de proyectos</h4>
+                <p class="service-item-text">
+                  Ofrecemos un servicio integral de control y monitoreo de proyectos para 
+                  cualquier iniciativa de ingeniería, adquisiciones o construcción. Nuestra 
+                  metodología incluye la creación de la WBS (Work Breakdown Structure), definición 
+                  de cronogramas, presupuestos y curvas S de valor ganado. Además, realizamos 
+                  programación ganada, seguimiento continuo y monitoreo del avance. Generamos 
+                  reportes diarios, semanales, mensuales y de cierre, asegurando que cada etapa del 
+                  proyecto esté alineada con los objetivos de tiempo, costo y calidad.</p>
+              </div>
+            </li>
+      
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./static/images/serv3.webp" alt="Mobile app icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Gestión de Permisos de Proyectos de Energías Renovables</h4>
+                <p class="service-item-text">
+                  Gestionamos la habilitación técnica y comercial para proyectos de energías renovables en Argentina. 
+                  Nos encargamos de tramitar autorizaciones clave como el ingreso al MEM, el acceso a la 
+                  capacidad de transporte y la presentación de estudios eléctricos a CAMMESA. Aseguramos 
+                  la aprobación de proyectos SMEC y SOTR, conformidades del PAFTT y acta de ajuste de 
+                  protecciones. También gestionamos mediciones, ensayos y procedimientos de determinación 
+                  del valor de potencia, garantizando el cumplimiento de los requisitos regulatorios para 
+                  habilitaciones exitosas.
+                </p>
+              </div>
+            </li>
+      
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./static/images/serv4.webp" alt="Camera icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Formulación y evaluación de proyectos</h4>
+                <p class="service-item-text">
+                  Servicio de formulación y evaluación de proyectos, determinando 
+                  su viabilidad técnica, económica y financiera. Realizamos estudios de factibilidad 
+                  que incluyen el desarrollo de ingeniería conceptual para definir la tecnología 
+                  adecuada y evaluar la selección del sitio. También relevamos datos de mercado 
+                  y normativas ambientales. Elaboramos proyecciones financieras como cash flow y 
+                  estados de ganancias y pérdidas. Calculamos parámetros de factibilidad (VPN, TIR) y analizamos 
+                  la sensibilidad de las variables clave, garantizando decisiones fundamentadas y exitosas.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <h3 class="h2 section-title">Proyectos Destacados</h3>
+
+        <section class="image-ticker">
+          <div class="ticker-wrapper">
+            <div class="ticker-content">
+              <img src="./static/images/tickerser/1.webp" alt="Foto 1">
+              <img src="./static/images/tickerser/2.webp" alt="Foto 2">
+              <img src="./static/images/tickerser/3.webp" alt="Foto 3">
+              <img src="./static/images/tickerser/4.webp" alt="Foto 4">
+              <img src="./static/images/tickerser/5.webp" alt="Foto 5">
+              <img src="./static/images/tickerser/6.webp" alt="Foto 6">
+              <img src="./static/images/tickerser/7.webp" alt="Foto 7">
+              <img src="./static/images/tickerser/8.webp" alt="Foto 8">
+              <img src="./static/images/tickerser/9.webp" alt="Foto 9">
+              <img src="./static/images/tickerser/10.webp" alt="Foto 10">
+            </div>
+          </div>
+
+          <section class="work-modes">
+            <h2 class="h2 section-title">Nuestras Modalidades de Trabajo</h2>
+          
+            <div class="work-modes-container">
+              <!-- Modalidad Remota -->
+              <div class="mode-box">
+                <div class="mode-icon">
+                  <img src="./static/images/working1.svg" alt="Icono de remoto" width="50">
+                </div>
+                <h3 class="h3 mode-title">Remoto</h3>
+                <p>Trabajamos desde cualquier lugar, utilizando herramientas digitales (google meet, microsoft team) 
+                  para garantizar una comunicación eficiente y resultados excepcionales.</p>
+              </div>
+          
+              <!-- Modalidad Presencial -->
+              <div class="mode-box">
+                <div class="mode-icon">
+                  <img src="./static/images/working2.svg" alt="Icono de presencial" width="50">
+                </div>
+                <h3 class="h3 mode-title">Presencial</h3>
+                <p>Supervisamos y gestionamos proyectos directamente en las instalaciones del 
+                  cliente, asegurando una supervisión cercana y personalizada.</p>
+              </div>
+          
+              <!-- Modalidad Semipresencial -->
+              <div class="mode-box">
+                <div class="mode-icon">
+                  <img src="./static/images/working3.svg" alt="Icono de semipresencial" width="50">
+                </div>
+                <h3 class="h3 mode-title">Semipresencial</h3>
+                <p>Adaptamos nuestro enfoque según las necesidades del proyecto, combinando actividades 
+                  remotas y presenciales para mayor flexibilidad.</p>
+              </div>
+            </div>
+          </section>
+          
+        
+        
+
+
+      </article>
+      
+
+      
+      <!--
+        - #FIN DE MIS SERVICIOS
+      -->
+
+      
 
 
 
@@ -699,7 +890,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portafolio" data-page="portafolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -726,7 +917,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>ProcessMe</button>
+              <button data-filter-btn>Ingeniería</button>
             </li>
 
           </ul>
@@ -762,69 +953,91 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>ProcessMe</button>
+                <button data-select-item>Ingeniería</button>
               </li>
 
             </ul>
 
           </div>
+<!--LISTA DE ENLACES PARA PROYECTOS QUE ESTAN EN EL PORTAFOLIO-->
 
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+<!--PROYECTO 1: EL NOMBRE DEL PROYECTO-->
+            <li class="project-item  active" data-filter-item data-category="construcción">
+              <a href="{{ url_for('project1') }}">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./static/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./static/images/project-1.jpeg" alt="fundo" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title">Generación de energía</h3>
+                <p class="project-category">Construcción</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+<!--PROYECTO 4: EL NOMBRE DEL PROYECTO-->
+            <li class="project-item  active" data-filter-item data-category="construcción">
+              <a href="{{ url_for('project4') }}">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./static/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./static/images/project-4.webp" alt="ceniza" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title">Planta de tratamiento de efluentes</h3>
+                <p class="project-category">Construcción</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="Construcción">
-              <a href="#">
-
+<!--INICIO - PROYECTO 3: EL NOMBRE DEL PROYECTO00000000000000000000000000000000 3 000000000000000000000-->
+            <li class="project-item  active" data-filter-item data-category="ingeniería">
+              <a href="{{ url_for('project3') }}">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./static/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Fundacionales</h3>
-
-                <p class="project-category">Construcción</p>
-
+                <h3 class="project-title">Viviendas Unifamiliares</h3>
+                <p class="project-category">Ingeniería</p>
               </a>
             </li>
+<!--FIN - PROYECTO 3: EL NOMBRE DEL PROYECTO00000000000000000000000000000000 3 000000000000000000000-->
 
+<!--INICIO - PROYECTO 2: EL NOMBRE DEL PROYECTO00000000000000000000000000000000 4 000000000000000000000-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="{{ url_for('project2') }}">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./static/images/project-2.png" alt="webpersonal" loading="lazy">
+                </figure>
+                <h3 class="project-title">Portafolio Personal</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+<!--FIN - PROYECTO 4: EL NOMBRE DEL PROYECTO00000000000000000000000000000000 4 000000000000000000000-->
+<!--PROYECTO 5: CONCENTRADOR DE VINAZAS-->
+            <li class="project-item  active" data-filter-item data-category="construcción">
+              <a href="{{ url_for('project5') }}">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./static/images/project-5.webp" alt="vinaza" loading="lazy">
+                </figure>
+                <h3 class="project-title">Planta de concentración de vinazas</h3>
+                <p class="project-category">Construcción</p>
+              </a>
+            </li>
+<!--FIN - PROYECTO 5-->
+
+
+
+
+
+
+<!--PROYECTO 4: EL NOMBRE DEL PROYECTO
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
@@ -841,8 +1054,8 @@
                 <p class="project-category">Applications</p>
 
               </a>
-            </li>
-
+            </li>-->
+<!--PROYECTO 5: EL NOMBRE DEL PROYECTO
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
@@ -859,8 +1072,8 @@
                 <p class="project-category">Web design</p>
 
               </a>
-            </li>
-
+            </li>-->
+<!--PROYECTO 6: EL NOMBRE DEL PROYECTO
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
@@ -877,8 +1090,8 @@
                 <p class="project-category">Web design</p>
 
               </a>
-            </li>
-
+            </li>-->
+<!--PROYECTO 7: EL NOMBRE DEL PROYECTO
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
@@ -895,8 +1108,8 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
-
+            </li>-->
+<!--PROYECTO 8: EL NOMBRE DEL PROYECTO
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
@@ -913,8 +1126,8 @@
                 <p class="project-category">Applications</p>
 
               </a>
-            </li>
-
+            </li>-->
+<!--PROYECTO 9: EL NOMBRE DEL PROYECTO
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
@@ -931,8 +1144,8 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
-
+            </li>-->
+<!--PROYECTO FINAL AQUI CONTINUAN: EL NOMBRE DEL PROYECTO-->
           </ul>
 
         </section>
@@ -947,7 +1160,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog {% if active_page == 'blog' %}active{% endif %}" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -958,27 +1171,24 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <a href="{{ url_for('articulo1') }}">
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./static/images/Blog-1prima.webp" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">AC: Integración</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Nov 25, 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">El Rol del Project Manager como Integrador de Interfaces Múltiples</h3>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
+                  <p class="blog-text">by YRVING VIERA</p>
 
                 </div>
 
@@ -1158,7 +1368,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="{{ url_for('send_message') }}" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1198,6 +1408,8 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
 
 </body>
 
