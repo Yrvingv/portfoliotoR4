@@ -34,10 +34,14 @@
         <!-- Video del Proyecto -->
         <section id="video">
             <h2>Muestra del Proyecto</h2>
-            <video controls autoplay muted>
-                <source src="{{ url_for('static', filename='images/proyecto2/1.mp4') }}" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
+            <div class="youtube-video">
+                <iframe
+                    src="https://www.youtube.com/embed/Q9h6oqy1wKY?autoplay=1&mute=1"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
         <!-- Relato del Proyecto -->

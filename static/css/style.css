@@ -1032,6 +1032,7 @@ main {
 
 
 
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -2094,22 +2095,32 @@ body { background: var(--secondary-color); color: var(--primary-color); }
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   flex-direction: column; /* Asegura que el contenido esté en columna */
+  width: 100%; /* Se expande al 100% del contenedor principal */
+  max-width: 1200px; /* Límite máximo de ancho */
+  margin: 0 auto; /* Centrar el contenedor en la página */
 }
 
+/* Ajuste del título del video */
 .project-container #video h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: var(--primary-color);
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center; /* Centrar texto */
 }
 
-.project-container #video video {
-  width: 80%;
-  height: auto;
+/* Ajuste para el iframe del video */
+.project-container #video .youtube-video iframe {
+  width: 100%; /* Ocupa el ancho total del contenedor */
+  max-width: 1200px; /* Límite máximo de ancho */
+  height: auto; /* Ajuste proporcional */
+  aspect-ratio: 16 / 9; /* Proporción de video estándar */
   border-radius: 5px;
   border: 2px solid var(--primary-color);
 }
+
+
 
 /* Estilos para la galería de fotos */
 .project-container #fotos {

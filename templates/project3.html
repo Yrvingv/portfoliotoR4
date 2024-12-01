@@ -38,10 +38,14 @@
         <!-- Video del Proyecto -->
         <section id="video">
             <h2>Muestra del Proyecto</h2>
-            <video controls autoplay muted>
-                <source src="{{ url_for('static', filename='images/proyecto3/1.mp4') }}" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
+            <div class="youtube-video">
+                <iframe
+                src="https://www.youtube.com/embed/tX35dqRIBJI?autoplay=1&mute=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+            </div>
         </section>
 
         <!-- Relato del Proyecto -->
@@ -64,6 +68,7 @@
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/proyecto3/1.webp') }}" alt="Foto 1">
                 <img src="{{ url_for('static', filename='images/proyecto3/2.webp') }}" alt="Foto 2">
+                <img src="{{ url_for('static', filename='images/proyecto3/3.webp') }}" alt="Foto 3">
                 <img src="{{ url_for('static', filename='images/proyecto3/4.webp') }}" alt="Foto 4">
             </div>
         </section>
